@@ -11,7 +11,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    font-family: url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');;
+    font-family: url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 }
 
 body{
@@ -26,11 +26,11 @@ div.elpis-logo-container{
     position: relative;
     width: 5rem;
     height: 5rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     border-radius: 20%;
     color: darkslategray;
-    font-family: url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+    font-family: url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 }
 
 div.elpis-logo{
