@@ -1,0 +1,131 @@
+div.first-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-image: url(images/images\ \(31\).jpeg);
+    text-align: center;
+}
+
+footer > div.footer-scroller{
+    display: none;
+}
+
+div.base-footer{
+    min-height: 25rem;
+}
+
+footer{
+    max-height: 30rem;
+}
+
+body{
+    background-color: violet;
+}
+
+div.my-aboutme-notes > p > a{
+    color: darkblue;
+    cursor: pointer;
+}
+
+div.my-aboutme-notes > p > a:hover{
+    text-decoration: underline;
+}
+
+div.otherabout-me{
+    background-image: linear-gradient(to bottom, violet, darkgrey);
+    padding: 3rem 5vw;
+}
+
+div.otherabout-me h4{
+    text-align: center;
+    font-size: 3rem;
+}
+
+div.otherabout-me ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.otherabout-me ul li{
+    list-style-type: none;
+    border: 1px solid black;
+    width: 13vw;
+    height: 13vw;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    overflow: hidden;
+    transition: background-color 2s;
+    cursor: alias;
+}
+
+div.otherabout-me ul li:hover{
+    background-color: rgba(0, 139, 139, 0.267);
+    overflow: visible;
+}
+
+@media screen and (max-width: 900px) {
+    div.otherabout-me ul li{
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    div.otherabout-me ul li{
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    div.otherabout-me ul li{
+        width: 25vw;
+        height: 25vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    div.otherabout-me ul li{
+        width: 27vw;
+        height: 27vw;
+    }
+
+    div.otherabout-me h4{font-size: 2rem;}
+}
+
+@media screen and (max-width: 400px) {
+    div.otherabout-me ul li{
+        width: 35vw;
+        height: 35vw;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    div.otherabout-me ul li{
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    div.otherabout-me ul li{
+        width: 70vw;
+        height: 70vw;
+    }
+    
+    div.otherabout-me ul {justify-content: center;}
+}

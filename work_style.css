@@ -1,0 +1,151 @@
+div.first-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-image: url(images/background/wierd/images\ \(4\).jpeg);
+    text-align: center;
+}
+
+/* div.base-footer{
+    background-color: transparent;
+} */
+
+footer > div.footer-scroller{
+    display: none;
+}
+
+div.base-footer{
+    min-height: 25rem;
+}
+
+footer{
+    max-height: 30rem;
+}
+
+body{
+    background-color: darkred;
+}
+
+div[class|=otherworks] h4{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+div[class|=otherworks] ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+}
+
+div[class|=otherworks] ul li{
+    width: 30vw;
+    text-align: center;
+    list-style-type: none;
+    padding: 1rem;
+}
+
+div[class|=otherworks] ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    border: 1px solid black;
+    transition: box-shadow 1s;
+}
+
+div[class|=otherworks] ul li a:hover{
+    box-shadow: 0 0 10px 2px black;
+}
+
+div[class|=otherworks] ul li a img{
+    object-fit: cover;
+    width: 100%;
+    flex: 1;
+}
+
+div[class|=otherworks] ul li a span{
+    display: block;
+    background-color: rgb(48, 48, 48);
+    padding: .5rem;
+}
+
+div.otherworks-mech{
+    background-color: rgb(63, 63, 63);
+}
+
+div.sel-arrow-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    height: 10vh;
+    box-sizing: content-box;
+}
+
+div.ser-arrow-container{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    text-align: center;
+    height: 10vh;
+    box-sizing: content-box;
+}
+
+div.sel-arrow-container div, div.ser-arrow-container div{
+    height: inherit;
+    position: relative;
+}
+
+div.sel-arrow-container div a, div.ser-arrow-container div a{
+    position: absolute;
+    display: block;
+    height: inherit;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: inherit;
+}
+
+div.sel-arrow-container div a svg, div.ser-arrow-container div a svg{
+    width: 30vw;
+    height: 100%;
+    fill: red;
+    transition: fill 2s;
+    cursor: pointer;
+    z-index: 74;
+}
+
+div.ser-arrow-container div a svg{fill: orange;}
+
+div.sel-arrow-container div a svg:hover, div.ser-arrow-container div a svg:hover{
+    fill: blue;
+}
+
+@media screen and (max-width: 700px){
+    div[class|=otherworks] ul li{
+        width: 48vw;
+    }
+}
+
+@media screen and (max-width: 400px){
+    div[class|=otherworks] ul li{
+        width: 80vw;
+    }
+}

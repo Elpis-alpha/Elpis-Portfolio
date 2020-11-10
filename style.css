@@ -1,0 +1,1666 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: gabriola;
+}
+
+body{
+    max-width: 2000px;
+    flex-grow: 1;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+}
+
+div.elpis-logo-container{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.5rem;
+    display: flex;
+    border-radius: 20%;
+    color: darkslategray;
+    font-family: ElpisLogoFont;
+}
+
+div.elpis-logo{
+    text-align: center;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: french script mt;
+}
+
+div.elpis-logo-rotator{
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    height: 100%; width: 100%;
+    transition: transform 5s;
+    border: 1px solid black;
+    background-color: darkslateblue;
+    opacity: .5;
+    border-radius: inherit;
+}
+
+@keyframes rottlogtext{
+    10%{color: white;}
+    20%{color: maroon;}
+    30%{color: aqua;}
+    40%{color: rebeccapurple;}
+    50%{color: palegoldenrod;}
+    60%{color: red;}
+    70%{color: blue;}
+    80%{color: black;}
+    90%{color: mediumspringgreen;}
+    100%{color: white;}
+}
+
+@keyframes rottlog{
+    10%{background-color: darkred;}
+    20%{background-color: chartreuse;}
+    30%{background-color: purple;}
+    40%{background-color: goldenrod;}
+    50%{background-color: blueviolet;}
+    60%{background-color: lightseagreen;}
+    70%{background-color: crimson;}
+    80%{background-color: gray;}
+    90%{background-color: brown;}
+    100%{transform: rotate(3600deg);}
+}
+
+@keyframes rottlogt{
+    10%{background-color: darkred;}
+    20%{background-color: chartreuse;}
+    30%{background-color: purple;}
+    40%{background-color: goldenrod;}
+    50%{background-color: blueviolet;}
+    60%{background-color: lightseagreen;}
+    70%{background-color: crimson;}
+    80%{background-color: gray;}
+    90%{background-color: brown;}
+    100%{transform: rotate(4320deg)}
+}
+
+@keyframes rottlogth{
+    10%{background-color: darkred;}
+    20%{background-color: chartreuse;}
+    30%{background-color: purple;}
+    40%{background-color: goldenrod;}
+    50%{background-color: blueviolet;}
+    60%{background-color: lightseagreen;}
+    70%{background-color: crimson;}
+    80%{background-color: gray;}
+    90%{background-color: brown;}
+    100%{transform: rotate(5040deg)}
+}
+
+@keyframes rottlogf{
+    10%{background-color: darkred;}
+    20%{background-color: chartreuse;}
+    30%{background-color: purple;}
+    40%{background-color: goldenrod;}
+    50%{background-color: blueviolet;}
+    60%{background-color: lightseagreen;}
+    70%{background-color: crimson;}
+    80%{background-color: gray;}
+    90%{background-color: brown;}
+    100%{transform: rotate(5760deg)}
+}
+
+@keyframes rottlogfi{
+    10%{background-color: darkred;}
+    20%{background-color: chartreuse;}
+    30%{background-color: purple;}
+    40%{background-color: goldenrod;}
+    50%{background-color: blueviolet;}
+    60%{background-color: lightseagreen;}
+    70%{background-color: crimson;}
+    80%{background-color: gray;}
+    90%{background-color: brown;}
+    100%{transform: rotate(6480deg)}
+}
+
+div.elpis-logo{animation: rottlogtext 50s infinite;}
+
+div.elpis-logo-rotator{animation: rottlog 50s infinite;}
+
+div.elpis-logo-rotator.second{animation: rottlogt 50s infinite;}
+
+div.elpis-logo-rotator.third{animation: rottlogth 50s infinite;}
+
+div.elpis-logo-rotator.fourth{animation: rottlogf 50s infinite;}
+
+div.elpis-logo-rotator.five{animation: rottlogfi 50s infinite;}
+
+div.topper{
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index: 50;
+    color: white;
+}
+
+nav > header a{
+    text-decoration: none;
+}
+
+nav > header div.elpis-logo-container{
+    width: 4.4rem;
+    height: 4.4rem;
+    font-size: 2.2rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav > ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav > ul > li{
+    list-style-type: none;
+}
+
+nav > ul > li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.7rem 2rem;
+    font-size: 1rem;
+    transition: background-color 1s;
+}
+
+nav > ul > li a:hover{
+    background-color: rgba(190, 64, 106, 0.452);
+}
+
+nav > ul > li span{
+    display: none;
+}
+
+div.ham-hammie{
+    display: none;
+}
+
+nav > header{
+    padding: 2rem 2rem;
+}
+
+div.first-image > header > h1{
+    font-size: 3.5rem;
+    z-index: 55;
+}
+
+div.first-image > header > h1{
+    padding-bottom: 10vh;
+}
+
+div.first-image  p{
+    padding-top: 10vh;
+    font-size: 1.7rem;
+    text-shadow: 0 0 1px black; 
+    z-index: 55;
+}
+
+div.first-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-image: url(images/background/1.jpg);
+    text-align: center;
+}
+
+div.small-circle{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 80vh;
+    z-index: 5;
+    padding: 10px 0 0 1rem;
+    display: flex;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+}
+
+div.small-circle ul{
+    transition: width 3s;
+    display: flex;
+    position: absolute;
+    padding-left: 3rem;
+    top: 0;
+    left: 0;
+}
+
+div.small-circle span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2rem;
+    display: inline-block;
+    border: 1px solid black;
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.575);
+    cursor: pointer;
+    z-index: 6;
+    box-shadow: 0 0 5px .2px black;
+    transition: transform 3s , color 3s, box-shadow 3s, background-color 1s;
+}
+
+div.small-circle span:hover{
+    background-color: grey;
+}
+
+div.small-circle ul > li{
+    list-style-type: none;
+    margin-left: -3rem;
+    border-radius: 50%;
+    z-index: 5;
+    transition: margin 3s, opacity 3.5s;
+    opacity: 0;
+}
+
+div.small-circle ul > li a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 2rem;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.425);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    box-shadow: 0 0 5px .2px black;
+    transition: box-shadow 1s;
+}
+
+div.small-circle ul > li a:hover{
+    box-shadow: 0 0 10px 1px black;
+}
+
+div.small-circle ul > li a svg{
+    width: 2rem;
+}
+
+div.small-circle > div{
+    position: relative;
+}
+
+div.small-circle.show  ul > li{
+    margin-left: 1rem;
+    transition: margin 3s, opacity 2s;
+    opacity: 1;
+}
+
+div.small-circle.show span{
+    transform: rotate(405deg); color: red;
+    box-shadow: 0 0 15px 2px black;
+}
+
+div.down-arrow-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    padding-bottom: 3vh;
+    box-sizing: content-box;
+    z-index: 4;
+}
+
+div.up-arrow-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    padding-top: 3vh;
+    box-sizing: content-box;
+    z-index: 4;
+}
+
+div.down-arrow-container div, div.up-arrow-container div{
+    height: inherit;
+    position: relative;
+}
+
+div.down-arrow-container div a, div.up-arrow-container div a{
+    position: absolute;
+    display: block;
+    height: inherit;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: inherit;
+}
+
+div.up-arrow-container div a{bottom: 0;}
+
+
+div.down-arrow-container div a svg, div.up-arrow-container div a svg{
+    width: 100px;
+    height: 100%;
+    fill: white;
+    transition: fill 2s;
+    cursor: pointer;
+}
+
+div.down-arrow-container div a svg:hover, div.up-arrow-container div a svg:hover{
+    fill: blue;
+}
+
+div.home-intro{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+div.home-intro > div.home-intro-content{
+    padding: 0 5vw;
+    display: flex;
+}
+
+div.home-intro > div.home-intro-content > div.home-intro-picture{
+    flex: 1.5;
+    border-right: 1px solid black;
+    padding: 0 1vw 0 0; 
+}
+
+div.home-intro > div.home-intro-content > div.home-intro-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+div.home-intro > div.home-intro-content > div.home-intro-notes{
+    flex: 2;
+    border-left: 1px solid black;
+    padding: 0 0 0 1vw; 
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+div.my-works{
+    min-height: 100vh;
+    background-color: darkred;
+    color: white;
+}
+
+div.my-works-content{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vw;
+}
+
+div.my-works-view{
+    flex-grow: 5;
+    flex-basis: 0%;
+    height: 60vh;
+    min-height: 22rem;
+}
+
+div.my-works-view > div{
+    height: 100%; width: 100%;
+}
+
+div.my-works-view div div.site-iframe{
+    height: 100%; width: 100%;
+    display: none;
+    z-index: 2;
+}
+
+div.my-works-view div div.default-iframe{
+    position: absolute;
+    top: 0;
+    height: 100%; width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    text-align: center;
+    z-index: 1;
+}
+
+@keyframes rarrow{
+    25%{fill: brown}
+    50%{fill: orange}
+    75%{fill: greenyellow}
+}
+
+div.my-works-view div div.default-iframe span{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+    fill: blue;
+    animation: rarrow 2s infinite;
+}
+
+div.my-works-view div iframe{
+    height: 100%; width: 100%;
+    transition: all 5s;
+}
+
+div.my-works-list{
+    flex-grow: 2;
+    flex-basis: 0%;
+    height: 80vh;
+    overflow: auto;
+    text-align: center;
+}
+
+div.my-works-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 10px;
+}
+
+div.my-works-list ul > li{
+    display: flex;
+    list-style-type: none;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    padding: .5rem 0;
+    margin: .2rem 0;
+    transition: background-color 1s, color 1s;
+    border-radius: 1rem;
+}
+
+div.my-works-list ul > li.active{
+    background-color: red;
+    color: black;
+}
+
+div.my-works-list ul > li:hover{
+    background-color: rgba(255, 0, 0, 0.425);
+    color: black;
+}
+
+div.my-works-view div div.panel{
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(92, 8, 8);
+    width: 100%;
+    overflow: hidden;
+}
+
+div.my-works-view div div.panel ul{
+    display: flex;
+}
+
+div.my-works-view div div.panel ul > li{
+    flex-grow: 1;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+div.my-works-view div div.panel ul > li:hover{
+    background-color: darksalmon;
+}
+
+div.my-services{
+    min-height: 100vh;
+    background-color: rgb(107, 142, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+div.my-services-content{
+    padding: 5vw;
+    display: flex;
+}
+
+div.my-services-content > div[class|=what-do]{
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    min-width: 40vw;
+}
+
+div.show-infoer{
+    display: none;
+}
+
+div.my-services-content > div[class|=what-do] div.description{
+    margin-top: 1rem;
+    flex: 1;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.my-services-content > div[class|=what-do] ul{
+    position: absolute;
+    top: 2.99rem;
+    width: 100%;
+    background-color: olivedrab;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+div.my-services-content > div[class|=what-do] div.services-groupie:hover > ul > li{
+    cursor: pointer;
+    opacity: 1;
+    z-index: 3;
+    display: block;
+}
+
+div.my-services-content > div[class|=what-do] div.services-groupie:hover > ul > li:hover{
+    background-color: rgb(46, 145, 43);
+}
+
+div.my-services-content > div[class|=what-do] ul > li{
+    list-style-type: none;
+    background-color: rgba(63, 70, 51, 0.8);
+    z-index: 3;
+    transition: all 1s;
+    display: none;
+}
+
+div.my-services-content > div[class|=what-do] ul > li.active{
+    background-color: teal;
+}
+
+div.my-services-content > div.what-do-first{
+    border-right: 1px solid rgb(61, 82, 21);
+}
+
+div.my-services-content > div.what-do-second{
+    border-left: 1px solid rgb(61, 82, 21);
+}
+
+div.my-services-content div.services-groupie{
+    width: 100%
+}
+
+div.my-services-content div.main-what-do{
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid rgb(61, 82, 21);
+    border-radius: 2rem;
+    transition: background-color 2s;
+    z-index: 4;
+    background-color: rgb(106, 142, 35);
+    cursor: pointer;
+    margin-bottom: .5rem;
+}
+
+div.my-services-content > div[class|=what-do] div.services-groupie:hover div.main-what-do{
+    background-color: rgb(61, 82, 21);
+}
+
+div.mech-designs{
+    min-height: 100vh;
+    background-image: url(images/7.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex
+}
+
+div.mech-designs-content{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5vw;
+    /* background-color: blue; */
+}
+
+div.mech-designs-view{
+    flex-grow: 5;
+    flex-basis: 0%;
+    height: 60vh;
+    min-height:22rem;
+}
+
+div.mech-designs-list{
+    flex-grow: 2;
+    flex-basis: 0%;
+    height: 80vh;
+    overflow: auto;
+    text-align: center;
+}
+
+div.mech-designs-view > div{
+    height: 100%; width: 100%;
+}
+
+div.mech-designs-view div div.default-mech-frame{
+    position: absolute;
+    top: 0;
+    height: 100%; width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: 2px solid black;
+    text-align: center;
+    z-index: 1;
+    background-color: rgba(107, 102, 94, 0.807);
+}
+
+div.mech-designs-list ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-right: 10px;
+}
+
+div.mech-designs-view div div.panel{
+    position: absolute;
+    top: 100%;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(168, 168, 168);
+    width: 100%;
+    overflow: hidden;
+}
+
+div.mech-designs-view div div.panel ul{
+    display: flex;
+}
+
+div.mech-designs-view div div.panel ul > li{
+    flex-grow: 1;
+    list-style-type: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+div.mech-designs-view div div.panel ul > li:first-child{border-right: 1px solid black;}
+div.mech-designs-view div div.panel ul > li:last-child{border-left: 1px solid black;}
+
+div.mech-designs-view div div.panel ul > li:hover{
+    background-color: rgb(75, 75, 75);
+    border: 0 none;
+}
+
+div.mech-designs-list ul > li{
+    display: flex;
+    list-style-type: none;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    padding: .5rem 0;
+    margin: .2rem 0;
+    transition: background-color 1s, color 1s;
+    border-radius: 1rem;
+}
+
+div.mech-designs-list ul > li.active{
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+div.mech-designs-list ul > li:hover{
+    background-color: rgba(66, 66, 66, 0.438);
+    color: black;
+}
+
+div.mech-designs-view div div.default-mech-frame span{
+    width: 5vw;
+    fill: blue;
+    animation: rarrow 2s infinite;
+}
+
+div.mech-designs-view div div.site-mech-frame{
+    height: 100%; width: 100%;
+    display: none;
+    z-index: 2;
+    border: 2px solid black;
+}
+
+div.mech-designs-view div div.site-mech-frame img{
+    height: 100%; width: 100%;
+    object-fit: contain;
+    background-color: white;
+    opacity: 0;
+}
+
+div.mech-designs-view div div.site-mech-frame img{
+    position: absolute;
+    top: 0;
+    transition: opacity 2s;
+}
+
+div.mech-designs-view div div.site-mech-frame img.active{
+    opacity: 1;
+}
+
+div.mech-designs-view > div.show div#lefter-image{
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 2%;
+}
+
+div.mech-designs-view > div.show:hover div.svgic svg{opacity: 1;}
+div.mech-designs-view > div.show div.svgic svg:hover{fill: blue;}
+
+div.mech-designs-view > div.show div.svgic svg{
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 1s, fill 1s;
+}
+
+div.mech-designs-view > div.show div.svgic{
+    position: absolute;
+    z-index: 4;
+    margin: 2px;
+    right: 0; top: 0;
+    width: 5%;
+}
+
+div.mech-designs-view > div.show div#righter-image{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 2%;
+}
+
+div.mech-designs-view > div.show div#downloader-image{
+    margin: 2%;
+    width: 3%;
+    fill: black;
+    display: block;
+}
+
+div.mech-designs-view > div div.svgic{
+    display: none;
+}
+
+div.my-aboutme{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    padding: 4vw;
+    background-color: violet;
+}
+
+div.my-aboutme > div.my-aboutme-content{
+    padding: 0 5vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+div.my-aboutme > div.my-aboutme-content > div.my-aboutme-picture{
+    flex: 1.5;
+    border-right: 0px solid black;
+    padding: 0 1vw 0 0;
+    max-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+div.my-aboutme > div.my-aboutme-content > div.my-aboutme-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.my-aboutme > div.my-aboutme-content > div.my-aboutme-notes{
+    flex: 2;
+    border-left: 2px solid black;
+    padding: 0 0 0 1vw; 
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+}
+
+div.base-footer{
+    min-height: 100vh;
+    background-color: darkgray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+div.base-footer > div.contact-me{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+div.base-footer div.contact-icons ul{
+    display: flex;
+}
+
+div.base-footer div.contact-icons ul > li{
+    list-style-type: none;
+    margin: 1.5rem;
+}
+
+div.base-footer div.contact-icons ul > li a{
+    width: 5vw;
+    background-color: black;
+    height: 5vw;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+div.base-footer div.contact-icons ul > li svg{
+    width:3vw;
+    height:3vw;
+    z-index: 3;
+    fill: white;
+}
+
+#block-contact{
+    position: absolute;
+    bottom: 5%;
+    padding: 1rem;
+    border: 1px solid black;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    transition: all 1s;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+#block-contact:hover{
+    /* background-color: red; */
+    background-color: rgb(102, 101, 101);
+    border: 0px none;
+    box-shadow: 0 0 15px 1px black;
+}
+
+div.base-footer > div.base-footer-content{
+    flex: 1;
+    display: flex;
+    background-color: rgb(75, 75, 75);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: agency FB;
+    min-height: 17rem;
+}
+
+footer > div.main-footer-text{
+    font-size: 3.5rem;
+    font-family: Agency FB;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 5;
+}
+
+footer > div.footer-scroller{
+    display: flex;
+    flex: 1;
+}
+
+footer > div.footer-scroller ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer > div.footer-scroller ul > li{
+    padding: .5rem 1rem;
+    list-style-type: none;
+    cursor: pointer;
+    transition: color .5s;
+}
+
+footer > div.footer-scroller ul > li:hover{
+    color: pink;
+}
+
+footer > div.footer-tabs{
+    display: flex;
+    flex: 2;
+}
+
+footer > div.footer-tabs ul{
+    display: flex;
+}
+
+footer > div.footer-tabs ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer > div.footer-tabs ul > li{
+    padding: .5rem 1rem;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+footer > div.footer-tabs ul > li a{
+    color: white;
+    text-decoration: none;
+    transition: color .5s, text-decoration .5s;
+}
+
+footer > div.footer-tabs ul > li a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+
+footer > div.copyrights-stuff{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div.copyrights-stuff > span ul{
+    text-align: center;
+    display: flex;
+    padding-top: .5rem;
+    flex-wrap: wrap;
+}
+
+footer > div.copyrights-stuff > span ul > li{
+    list-style-type: none;
+    padding: 0rem 1rem;
+}
+
+footer > div.copyrights-stuff > span ul > li a{
+    color: pink;
+    text-decoration: none;
+    transition: color .5s, text-decoration .5s;
+    text-decoration: underline;
+    cursor: not-allowed;
+}
+
+footer > div.copyrights-stuff > span ul > li a:hover{
+    color: teal;
+}
+
+div.base-footer div.contact-icons.foot ul{
+    align-items: center;
+    justify-content: center;
+}
+
+div.base-footer div.contact-icons.foot ul > li{margin: 1rem .5rem;}
+
+
+div.base-footer div.contact-icons.foot ul > li a{
+    width: 2rem;
+    background-color: black;
+    height: 2rem;
+}
+
+div.base-footer div.contact-icons.foot ul > li svg{
+    width: 1rem;
+    height: 1rem;
+    z-index: 3;
+    fill: white;
+}
+
+div.base-footer div.contact-icons ul:hover > li a{
+    opacity: .3;
+}
+
+div.base-footer div.contact-icons ul:hover > li a:hover{
+    opacity: 1;
+    background-color: royalblue;
+}
+
+div.contact-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.contact-text ~ div.contact-text{
+    padding-bottom: 5rem;
+}
+
+div.my-aboutme > div.my-aboutme-content,
+div.home-intro > div.home-intro-content,
+div.my-works > div.my-works-content,
+div.my-services > div.my-services-content,
+div.mech-designs > div.mech-designs-content{
+    padding: 10vh 5vw;
+}
+
+div.base-footer{
+    padding: 10vh 0 0 0;
+}
+
+
+@media screen and (max-width: 850px) {
+    div.topper{
+        overflow: hidden;
+        z-index: 56;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        height: 100vh;
+        background-color: rgba(220, 20, 60, 0.562);
+        width: 10rem;
+        transition: margin 3s;
+        overflow: hidden;
+        margin-right: -10rem;
+        z-index: 60;
+    }
+
+    nav > ul > li{
+        flex: 1;
+        width: 100%;
+        z-index: 60;
+    }
+
+    nav > ul > li a{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 60;
+    }
+
+    nav > ul > li a:hover{
+        background-color: rgba(220, 20, 60, 0.962);
+    }
+
+    nav > ul > li span{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right:0;
+        margin: 0.5rem;
+        font-size: 2rem;
+        margin-top: 0;
+        z-index: 70;
+        cursor: pointer;
+        transition: color .5s;
+    }
+
+    nav > ul > li span:hover{
+        color: blue;
+    }
+
+    nav > ul.show-lis{
+        margin-right: 0;
+    }
+
+    div.ham-hammie{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 5rem;
+        fill: white;
+        padding: 2rem 2rem .5rem .5rem;
+    }
+
+    div.ham-hammie svg{
+        cursor: pointer;
+        z-index: 5;
+        transition: fill 2s, opacity 3s, transform 5s;
+    }
+
+    div.ham-hammie svg:hover{
+        fill: deepskyblue;
+        transform: rotate(45deg)
+    }
+
+    div.ham-hammie svg.hide-hammie{
+        transition: opacity 3s, transform 5s;
+        transform: rotate(500deg);
+        opacity: 0;
+        z-index: -1;
+    }
+
+    div.first-image > div.down-arrow-container{
+        z-index: 56;
+    }
+
+    div.home-intro > div.home-intro-content{
+        flex-direction: column;
+    }
+
+    div.home-intro > div.home-intro-content > div.home-intro-picture{
+        border: 0 none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid black;
+    }
+    
+    div.home-intro > div.home-intro-content > div.home-intro-picture img{
+        width: 50%
+    }
+    
+    div.home-intro > div.home-intro-content > div.home-intro-notes{
+        padding: 0;
+        border: 0 none;
+        padding-top: 1.5rem;
+        border-top: 1px solid black;
+        text-align: center;
+        font-size: 1rem;
+        font-family: gabriola;
+    }
+
+    div.my-works-content{
+        flex-direction: column;
+        padding: 15vh 10vh;
+    }
+
+    div.my-works-view{
+        width: 100%;
+        height: auto;
+        flex: 1;
+        display: flex;
+    }
+
+    div.my-works-list ul{
+        height: auto;
+        padding-top: 3.5rem;
+        flex-direction: row;
+    }
+
+    div.my-works-list ul > li{
+        margin: .2rem 1rem;
+    }
+
+    div.my-works-list{
+        height: auto;
+        flex: 0;
+    }
+
+    div.my-works-view div div.panel{
+        z-index: 5;
+    }
+
+    div.my-works-view > div{
+        height: inherit;
+    }
+
+    div.my-works-view div div.default-iframe{
+        flex-direction: column;
+    }
+
+    div.my-works-view div div.default-iframe span{
+        transform: rotate(90deg);
+        position: absolute;
+        bottom: 10%;
+    }
+
+    div.mech-designs-content{
+        flex-direction: column;
+        padding: 15vh 10vh;
+    }
+
+    div.mech-designs-view{
+        width: 100%;
+        height: auto;
+        flex: 1;
+        display: flex;
+        order: 1;
+    }
+
+    div.mech-designs-list ul{
+        height: auto;
+        padding-top: 3.5rem;
+        flex-direction: row;
+    }
+
+    div.mech-designs-list ul > li{
+        margin: .2rem 1rem;
+        padding: .2rem 1rem;
+    }
+
+    div.mech-designs-list{
+        height: auto;
+        flex-basis: auto;
+        order: 2;
+        flex-grow: 0;
+    }
+
+    div.mech-designs-view div div.panel{
+        z-index: 5;
+    }
+
+    div.mech-designs-view > div{
+        height: inherit;
+    }
+
+    div.mech-designs-view div div.default-mech-frame{
+        flex-direction: column;
+    }
+
+    div.mech-designs-view div div.default-mech-frame span{
+        transform: rotate(-90deg);
+        position: absolute;
+        bottom: 10%;
+    }
+
+    div.mech-designs-list ul > li:hover{
+        background-color: rgba(255, 255, 255, 0.521);
+    }
+
+    div.mech-designs-list ul > li.active{
+        background-color: white;
+        color: black;
+    }
+
+    div.my-aboutme > div.my-aboutme-content{
+        flex-direction: column;
+    }
+
+    div.my-aboutme > div.my-aboutme-content > div.my-aboutme-picture{
+        border: 0 none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid black;
+        max-height: none;
+    }
+    
+    div.my-aboutme > div.my-aboutme-content > div.my-aboutme-picture img{
+        width: 50%;
+        height: 100%;
+    }
+    
+    div.my-aboutme > div.my-aboutme-content > div.my-aboutme-notes{
+        padding: 0;
+        border: 0 none;
+        padding-top: 1.5rem;
+        border-top: 1px solid black;
+        text-align: center;
+        font-size: 1rem;
+        font-family: gabriola;
+    }
+   
+    div.base-footer{
+        padding-top: 15vh
+    }
+
+    div.base-footer > div.base-footer-content{
+        flex: 1.5;
+    }
+
+    div.base-footer > div.contact-me{
+        justify-content: flex-start;
+    }
+
+    div.base-footer div.contact-icons ul > li a{
+        width: 8vw;
+        height: 8vw;
+    }
+
+    div.base-footer div.contact-icons ul > li{
+        margin: 1rem;
+    }
+
+    div.base-footer div.contact-icons ul > li svg{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    footer > div.main-footer-text{
+        font-size: 3rem;
+        flex: 2.5;
+        padding-top: 1rem;
+    }
+
+    footer > div.footer-tabs{
+        flex: 1;
+    }
+
+    span.wierd-stuff {
+        padding-top: .5rem;
+    }
+
+    div.base-footer div.contact-icons.foot ul > li{
+        margin: 0rem .5rem 1.5rem .5rem;
+    }
+
+    #block-contact{
+        width: 30vw;
+        margin: auto;
+    }
+
+    div.small-circle.show ul > li {
+        margin-left: .5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav > header div.elpis-logo-container {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    div.ham-hammie{
+        width: 4rem;
+        padding: 2.5rem 2rem .5rem .5rem;
+    }
+
+    nav > ul{
+        width: 8rem;
+        background-color: rgba(27, 109, 165, 0.962);
+    }
+
+    div.first-image > div.down-arrow-container{
+        width: 40%;
+        margin: auto;
+    }
+
+    div.first-image > header > h1{
+        font-size: 2rem;
+        padding-bottom: 10vh;
+    }
+
+    div.first-image p{
+        font-size: 1.2rem;
+    }
+
+    div.down-arrow-container div a svg, div.up-arrow-container div a svg{
+        width: 50px;
+    }
+
+    div.down-arrow-container,
+    div.up-arrow-container{
+        padding: 0;
+    }
+
+    div.my-works-content{
+        padding: 10vh 3vh;
+    }
+
+    div.my-works-list ul{
+        flex-direction: column;
+    }
+
+    div.my-works-list{
+        width: 100%;
+    }
+
+    div.my-services-content{
+        flex-direction: column;
+        padding: 10vh 5vw;
+        min-height: 100vh;
+        justify-content: space-around;
+    }
+
+    div.my-services-content > div[class|=what-do]{
+        border: none;
+        padding: 0;
+        flex: 0;
+    }
+
+    div.mech-designs-content{
+        padding: 10vh 3vh;
+    }
+
+    div.mech-designs-list ul{
+        flex-direction: column;
+    }
+
+    div.mech-designs-list{
+        width: 100%;
+    }
+
+    div.mech-designs-view > div.show div#downloader-image,
+    div.mech-designs-view > div.show div.svgic{
+        width: 10%;
+    }
+
+    div.my-aboutme > div.my-aboutme-content,
+    div.home-intro > div.home-intro-content,
+    div.my-works > div.my-works-content,
+    div.my-services > div.my-services-content,
+    div.mech-designs > div.mech-designs-content{
+        padding: 10vh 5vw;
+    }
+
+    div.my-aboutme{
+        padding: 0;
+    }
+
+    div.contact-text ~ div.contact-text{
+        padding-bottom: 4rem;
+    }
+
+    #block-contact{
+        padding: .5rem 0;
+        min-width: 50vw;
+    }
+
+    div.base-footer > div.contact-me{
+        flex: 0;
+        flex-basis: auto;
+    }
+
+    div.base-footer{
+        padding-top: 10vh;
+    }
+
+    div.base-footer div.contact-icons ul > li{
+        margin: 1rem 0.5rem;
+    }
+
+    footer > div.main-footer-text{
+        text-align: center;
+        font-size: 2rem;
+        flex: 2;
+    }
+
+    footer > div[class|=footer] ul{
+        flex-wrap: wrap;
+    }
+
+    footer > div[class|=footer] ul li{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    footer > div.copyrights-stuff{
+        text-align: center;
+    }
+
+    footer > div.copyrights-stuff > span ul > li{
+        padding: 0rem .3rem;
+    }
+
+    div.base-footer div.contact-icons.foot ul > li {
+        margin: 0rem .2rem 1rem .2rem;
+    }
+
+    div.small-circle span, div.small-circle ul > li a{
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+
+    div.small-circle ul > li{
+        margin-left: -2rem;
+    }
+
+    div.small-circle ul{
+        padding-left: 2rem;
+    }
+
+    div.small-circle ul > li a svg{
+        width: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    nav > header{
+        padding: 2rem 1rem;
+    }
+
+    nav > header div.elpis-logo-container {
+        width: 2rem;
+        height: 2rem;
+        font-size: .9rem;
+    }
+
+    div.ham-hammie {
+        width: 3rem;
+        padding: 2.1rem 1.2rem .5rem .5rem;
+    }
+
+    div.my-works-list ul{
+        padding: 5rem 0 0 0;
+    }
+
+    div.mech-designs-view div div.default-mech-frame span{
+        width: 15vw;
+    }
+
+    div.base-footer div.contact-icons ul > li,
+    div.base-footer div.contact-icons.foot ul > li{
+        margin: .5rem 1.2vw;
+    }
+
+    div.base-footer div.contact-icons.foot ul > li a,
+    div.base-footer div.contact-icons ul > li a{
+        width: 10vw;
+        height: 10vw;
+    }
+
+    footer{
+        min-height: 30rem;
+    }
+
+    @media screen and (max-height: 400px) {
+        footer{
+            min-height: 45rem;
+        }
+
+        div.first-image p{
+            font-size: .5rem;
+        }
+
+        div.first-image > header > h1{
+            font-size: .65rem;
+        }
+    }
+
+    div.base-footer div.contact-icons.foot ul > li a svg{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    div.small-circle ul{
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+
+    div.small-circle ul > li{
+        margin-top: -2rem;
+        margin-left: -2rem;
+    }
+
+    div.small-circle.show ul > li{
+        margin-top: -4.5rem;
+        margin-left: -2rem;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    div.small-circle{
+        top: 60vh;
+    }
+}
+
+/* Deadline is 000px */

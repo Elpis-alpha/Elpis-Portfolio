@@ -1,0 +1,54 @@
+div.first-image{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    background-image: url(images/background/wierd/images\ \(5\).jpeg);
+    text-align: center;
+}
+
+footer > div.footer-scroller{
+    display: none;
+}
+
+div.base-footer{
+    min-height: 25rem;
+}
+
+footer{
+    max-height: 30rem;
+}
+
+div.my-services{
+    background: linear-gradient(to bottom, rgb(200, 200, 200), rgb(169, 169, 169));
+}
+
+div.my-services-content div.services-groupie{
+    color: white;
+}
+
+div.my-services-content div.main-what-do{
+    background-color: grey;
+}
+
+div.my-services-content > div[class|=what-do]{
+    color: black;
+}
+
+div.my-services-content > div[class|=what-do] ul > li{
+    background-color: rgb(87, 86, 86);
+}
+
+div.my-services-content > div[class|=what-do] div.services-groupie:hover div.main-what-do{
+    background-color: rgb(87, 86, 86);
+}
+
+div.base-footer{
+    padding-top: 0;
+}
