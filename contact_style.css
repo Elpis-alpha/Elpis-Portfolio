@@ -13,6 +13,10 @@ div.first-image{
     text-align: center;
 }
 
+@media screen and (orientation: portrait) {
+    div.first-image{ background-image: url('images/background/contact.jpeg')}
+}
+
 div.main-content > div.whole-connect > div.connect-outside > h4{
     font-size: 3rem;
     padding: 3rem 2rem 0 2rem;
