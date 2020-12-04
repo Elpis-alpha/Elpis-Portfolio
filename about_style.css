@@ -9,7 +9,7 @@ div.first-image{
     align-items: center;
     color: white;
     justify-content: center;
-    background-image: url(images/images\ \(31\).jpeg);
+    background-image: url('images/background/about.jpeg');
     text-align: center;
 }
 
