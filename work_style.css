@@ -13,6 +13,10 @@ div.first-image{
     text-align: center;
 }
 
+@media screen and (orientation: portrait) {
+    div.first-image{ background-image: url('images/background/work.jpeg')}
+}
+
 /* div.base-footer{
     background-color: transparent;
 } */
