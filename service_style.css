@@ -9,7 +9,7 @@ div.first-image{
     align-items: center;
     color: white;
     justify-content: center;
-    background-image: url(images/background/weird/images\ \(5\).jpeg);
+    background-image: url('images/background/weird/images\ \(5\).jpeg');
     text-align: center;
 }
 
